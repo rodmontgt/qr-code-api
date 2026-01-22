@@ -27,8 +27,7 @@ ENV API_PASSWORD=changeme
 # Expose port
 EXPOSE 80
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost/ || exit 1
+# Expose port
+EXPOSE 80
 
 CMD ["apache2-foreground"]
